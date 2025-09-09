@@ -1,22 +1,39 @@
 ---
-title: "test1"
----
-
-## Quarto
-
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
-
-
----
-title: "Quarto Test Document"
+title: "Test Paper: Cross-Referencing in Quarto"
+author: "Your Name"
+date: "2025-09-09"
 format: pdf
 jupyter: python3
 ---
 
-# Heading Level 1
+# Introduction {#sec-intro}
 
-## Heading Level 2
+This test paper demonstrates the use of **cross-referencing** in Quarto documents. It includes sections, tables, figures, and code blocks with labels for academic-style referencing.
 
-This is some **bold** text and some *italic* text.
+Refer to the results in @sec-results and the conclusion in @sec-conclusion.
 
-Here is a simple equation:testststs
+# Methodology {#sec-method}
+
+We use Python to generate tables and simulate data. Tables and figures are labeled for referencing. See @tbl-planets and @fig-elephant for examples.
+
+# Results {#sec-results}
+
+## Code-Generated Table
+
+The following table presents data on astronomical objects. Reference: @tbl-planets.
+
+```{python}
+#| label: tbl-planets
+#| tbl-cap: Astronomical object data
+
+from IPython.display import Markdown
+from tabulate import tabulate
+
+table = [["Sun", "696,000", 1.989e30],
+         ["Earth", "6,371", 5.972e24],
+         ["Moon", "1,737", 7.34e22],
+         ["Mars", "3,390", 6.39e23]]
+
+Markdown(tabulate(
+  table, 
+  headers=["Astronomical object
