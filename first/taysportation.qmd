@@ -1,0 +1,61 @@
+---
+title: "I called a taxi to take me there – Taylor Swift’s Eras Tour Impact on Local Traffic"
+author: 
+  - Isabella Waldorf, TU Munich
+  - Athanasia Karalakou, TU Munich
+  - Klaus Bogenberger, TU Munich
+format: html
+jupyter: python3
+---
+
+
+![Swiftposium Banner](banner.png){#fig-banner}
+
+# Abstract {#sec-abstract}
+
+Large-scale entertainment events, such as concerts and festivals, introduce a sudden influx of irregular travelers into urban environments, placing temporary but intense pressure on transportation systems. This study presents a structured framework for analyzing the mobility impacts of such events, using multimodal data and behavioral insights. Starting with event-specific inputs—such as venue capacity, fanbase demographics, and transportation availability—we apply data cleaning and processing techniques to estimate modal splits, analyze demand surges, and assess traffic patterns. A representative case from Taylor Swift’s Eras Tour illustrates how public transit, ride-hailing services, and private vehicles respond to high-attendance scenarios, with notable congestion and speed reductions observed near key access routes. The findings inform policy recommendations focused on demand management strategies and multimodal coordination. This framework is designed to be scalable and adaptable across different cities and event types, supporting evidence-based planning for future special events.
+
+# Introduction {#sec-intro}
+
+Most of us have attended a planned special event such as a concert or a sports game. But have we ever considered how these events impact the transportation systems of our cities?
+
+Irregular travelers, such as attendees of special events, can cause excessive road traffic and public transportation crowding, undermining the appeal and effectiveness of public transportation. This paper investigates the transportation effects of Taylor Swift’s Eras Tour in Chicago (June 2–4, 2023), using multimodal data to understand travel behavior and system stress.
+
+## Research Questions
+🚗🚌 How do attendees of special events contribute to road traffic and public transportation crowding?
+
+🚧 What can authorities do better to reduce overall congestion and improve transportation planning?
+
+# Case Study: Chicago Concerts {#sec-case}
+
+- **Location**: Soldier Field Stadium
+- **Dates**: June 2–4, 2023
+- **Capacity**: 63,500 attendees per night
+
+## Data Sources
+- Taxi Trips
+- Uber Rides
+- CTA Ridership
+- Traffic Tracker
+- Historical Congestion Estimates
+
+# Modal Split Estimation {#sec-modal}
+
+```{python}
+# Example modal split data
+modal_split = {
+    "Metro": 8,
+    "Bus": 3,
+    "Taxi": 6,
+    "Uber": 32,
+    "Car": 51
+}
+
+import matplotlib.pyplot as plt
+plt.bar(modal_split.keys(), modal_split.values(), color='mediumslateblue')
+plt.title("Estimated Modal Split")
+plt.ylabel("Percentage")
+plt.show()
+```
+
+test

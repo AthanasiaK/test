@@ -1,39 +1,46 @@
 ---
-title: "Test Paper: Cross-Referencing in Quarto"
+title: "Lane-Free Traffic Control: A Quarto Test Paper"
 author: "Your Name"
 date: "2025-09-09"
-format: pdf
+format: html
 jupyter: python3
+bibliography: bibliography.bib
+
 ---
 
 # Introduction {#sec-intro}
 
-This test paper demonstrates the use of **cross-referencing** in Quarto documents. It includes sections, tables, figures, and code blocks with labels for academic-style referencing.
+This paper explores the concept of **lane-free traffic**, where vehicles are not constrained by traditional lane markings. This approach aims to improve traffic flow and safety, especially in complex environments like roundabouts and intersections.
 
-Refer to the results in @sec-results and the conclusion in @sec-conclusion.
+The concept is inspired by the artificial-fluid model introduced in @lanefreepaper2021, which treats traffic as a continuous flow rather than discrete lane-based streams.
 
-# Methodology {#sec-method}
+## Lane-Free Traffic Flowchart
 
-We use Python to generate tables and simulate data. Tables and figures are labeled for referencing. See @tbl-planets and @fig-elephant for examples.
+![LFT](flowchart.png){#fig-flowchart}
+
+
+# Simulation Setup {#sec-setup}
+
+We simulate a lane-free traffic scenario using a simplified model. The parameters are summarized in Table @tbl-simparams, which outlines the number of vehicles, simulation duration, and control method used.
+
+## Simulation Parameters
+
+| Parameter         | Value        |
+|------------------|--------------|
+| Vehicle Count     | 100          |
+| Simulation Time   | 300 seconds  |
+| Control Method    | Artificial Fluid Model |
+
+: Simulation parameters used in the lane-free traffic scenario {#tbl-simparams}
 
 # Results {#sec-results}
 
-## Code-Generated Table
+## Vehicle Density Over Time
 
-The following table presents data on astronomical objects. Reference: @tbl-planets.
+The figure below (Figure @fig-flowchart) shows how vehicle density changes over time during the simulation. This visualization helps assess the stability and flow of traffic under lane-free conditions.
 
-```{python}
-#| label: tbl-planets
-#| tbl-cap: Astronomical object data
+![Vehicle density over time in a lane-free simulation](densityity}
 
-from IPython.display import Markdown
-from tabulate import tabulate
+# Conclusion {#sec-conclusion}
 
-table = [["Sun", "696,000", 1.989e30],
-         ["Earth", "6,371", 5.972e24],
-         ["Moon", "1,737", 7.34e22],
-         ["Mars", "3,390", 6.39e23]]
-
-Markdown(tabulate(
-  table, 
-  headers=["Astronomical object
+This test paper demonstrates how to structure a Quarto document with citations, labeled tables, and figures. The lane-free traffic model, as proposed in @lanefreepaper2021, offers a promising direction for future mobility systems. The simulation parameters in Table @tbl-simparams and the results shown in Figure @fig-flowchart support the feasibility of this approach.

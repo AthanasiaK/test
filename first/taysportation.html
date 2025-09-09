@@ -6,10 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Your Name">
-<meta name="dcterms.date" content="2025-09-09">
+<meta name="author" content="Isabella Waldorf, TU Munich">
+<meta name="author" content="Athanasia Karalakou, TU Munich">
+<meta name="author" content="Klaus Bogenberger, TU Munich">
 
-<title>Lane-Free Traffic Control: A Quarto Test Paper</title>
+<title>I called a taxi to take me there – Taylor Swift’s Eras Tour Impact on Local Traffic</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,41 +23,56 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
 }
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
-<script src="test1_files/libs/clipboard/clipboard.min.js"></script>
-<script src="test1_files/libs/quarto-html/quarto.js" type="module"></script>
-<script src="test1_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="test1_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="test1_files/libs/quarto-html/popper.min.js"></script>
-<script src="test1_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="test1_files/libs/quarto-html/anchor.min.js"></script>
-<link href="test1_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="test1_files/libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="test1_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="test1_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="test1_files/libs/bootstrap/bootstrap-9e3ffae467580fdb927a41352e75a2e0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="taysportation_files/libs/clipboard/clipboard.min.js"></script>
+<script src="taysportation_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="taysportation_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="taysportation_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="taysportation_files/libs/quarto-html/popper.min.js"></script>
+<script src="taysportation_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="taysportation_files/libs/quarto-html/anchor.min.js"></script>
+<link href="taysportation_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="taysportation_files/libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="taysportation_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="taysportation_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="taysportation_files/libs/bootstrap/bootstrap-9e3ffae467580fdb927a41352e75a2e0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -69,7 +85,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lane-Free Traffic Control: A Quarto Test Paper</h1>
+<h1 class="title">I called a taxi to take me there – Taylor Swift’s Eras Tour Impact on Local Traffic</h1>
 </div>
 
 
@@ -77,18 +93,14 @@ div.csl-indent {
 <div class="quarto-title-meta">
 
     <div>
-    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-heading">Authors</div>
     <div class="quarto-title-meta-contents">
-             <p>Your Name </p>
+             <p>Isabella Waldorf, TU Munich </p>
+             <p>Athanasia Karalakou, TU Munich </p>
+             <p>Klaus Bogenberger, TU Munich </p>
           </div>
   </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">September 9, 2025</p>
-    </div>
-  </div>
   
     
   </div>
@@ -98,81 +110,77 @@ div.csl-indent {
 </header>
 
 
+<div id="fig-banner" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-banner-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="banner.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-banner-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Swiftposium Banner
+</figcaption>
+</figure>
+</div>
+<section id="sec-abstract" class="level1">
+<h1>Abstract</h1>
+<p>Large-scale entertainment events, such as concerts and festivals, introduce a sudden influx of irregular travelers into urban environments, placing temporary but intense pressure on transportation systems. This study presents a structured framework for analyzing the mobility impacts of such events, using multimodal data and behavioral insights. Starting with event-specific inputs—such as venue capacity, fanbase demographics, and transportation availability—we apply data cleaning and processing techniques to estimate modal splits, analyze demand surges, and assess traffic patterns. A representative case from Taylor Swift’s Eras Tour illustrates how public transit, ride-hailing services, and private vehicles respond to high-attendance scenarios, with notable congestion and speed reductions observed near key access routes. The findings inform policy recommendations focused on demand management strategies and multimodal coordination. This framework is designed to be scalable and adaptable across different cities and event types, supporting evidence-based planning for future special events.</p>
+</section>
 <section id="sec-intro" class="level1">
 <h1>Introduction</h1>
-<p>This paper explores the concept of <strong>lane-free traffic</strong>, where vehicles are not constrained by traditional lane markings. This approach aims to improve traffic flow and safety, especially in complex environments like roundabouts and intersections.</p>
-<p>The concept is inspired by the artificial-fluid model introduced in <span class="citation" data-cites="lanefreepaper2021">Papageorgiou et al. (<a href="#ref-lanefreepaper2021" role="doc-biblioref">2021</a>)</span>, which treats traffic as a continuous flow rather than discrete lane-based streams.</p>
-<section id="lane-free-traffic-flowchart" class="level2">
-<h2 class="anchored" data-anchor-id="lane-free-traffic-flowchart">Lane-Free Traffic Flowchart</h2>
-<div id="fig-flowchart" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-flowchart-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="flowchart.png" class="img-fluid figure-img">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-flowchart-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: LFT
-</figcaption>
+<p>Most of us have attended a planned special event such as a concert or a sports game. But have we ever considered how these events impact the transportation systems of our cities?</p>
+<p>Irregular travelers, such as attendees of special events, can cause excessive road traffic and public transportation crowding, undermining the appeal and effectiveness of public transportation. This paper investigates the transportation effects of Taylor Swift’s Eras Tour in Chicago (June 2–4, 2023), using multimodal data to understand travel behavior and system stress.</p>
+<section id="research-questions" class="level2">
+<h2 class="anchored" data-anchor-id="research-questions">Research Questions</h2>
+<p>🚗🚌 How do attendees of special events contribute to road traffic and public transportation crowding?</p>
+<p>🚧 What can authorities do better to reduce overall congestion and improve transportation planning?</p>
+</section>
+</section>
+<section id="sec-case" class="level1">
+<h1>Case Study: Chicago Concerts</h1>
+<ul>
+<li><strong>Location</strong>: Soldier Field Stadium</li>
+<li><strong>Dates</strong>: June 2–4, 2023</li>
+<li><strong>Capacity</strong>: 63,500 attendees per night</li>
+</ul>
+<section id="data-sources" class="level2">
+<h2 class="anchored" data-anchor-id="data-sources">Data Sources</h2>
+<ul>
+<li>Taxi Trips</li>
+<li>Uber Rides</li>
+<li>CTA Ridership</li>
+<li>Traffic Tracker</li>
+<li>Historical Congestion Estimates</li>
+</ul>
+</section>
+</section>
+<section id="sec-modal" class="level1">
+<h1>Modal Split Estimation</h1>
+<div id="150b851f" class="cell" data-execution_count="1">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Example modal split data</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>modal_split <span class="op">=</span> {</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Metro"</span>: <span class="dv">8</span>,</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Bus"</span>: <span class="dv">3</span>,</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Taxi"</span>: <span class="dv">6</span>,</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Uber"</span>: <span class="dv">32</span>,</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Car"</span>: <span class="dv">51</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>plt.bar(modal_split.keys(), modal_split.values(), color<span class="op">=</span><span class="st">'mediumslateblue'</span>)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Estimated Modal Split"</span>)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Percentage"</span>)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="taysportation_files/figure-html/cell-2-output-1.png" width="585" height="431" class="figure-img"></p>
 </figure>
 </div>
-</section>
-</section>
-<section id="sec-setup" class="level1">
-<h1>Simulation Setup</h1>
-<p>We simulate a lane-free traffic scenario using a simplified model. The parameters are summarized in Table <a href="#tbl-simparams" class="quarto-xref">Table&nbsp;1</a>, which outlines the number of vehicles, simulation duration, and control method used.</p>
-<section id="simulation-parameters" class="level2">
-<h2 class="anchored" data-anchor-id="simulation-parameters">Simulation Parameters</h2>
-<div id="tbl-simparams" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-simparams-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;1: Simulation parameters used in the lane-free traffic scenario
-</figcaption>
-<div aria-describedby="tbl-simparams-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Parameter</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vehicle Count</td>
-<td>100</td>
-</tr>
-<tr class="even">
-<td>Simulation Time</td>
-<td>300 seconds</td>
-</tr>
-<tr class="odd">
-<td>Control Method</td>
-<td>Artificial Fluid Model</td>
-</tr>
-</tbody>
-</table>
 </div>
-</figure>
 </div>
-</section>
-</section>
-<section id="sec-results" class="level1">
-<h1>Results</h1>
-<section id="vehicle-density-over-time" class="level2">
-<h2 class="anchored" data-anchor-id="vehicle-density-over-time">Vehicle Density Over Time</h2>
-<p>The figure below (Figure <a href="#fig-flowchart" class="quarto-xref">Figure&nbsp;1</a>) shows how vehicle density changes over time during the simulation. This visualization helps assess the stability and flow of traffic under lane-free conditions.</p>
-<p>![Vehicle density over time in a lane-free simulation](densityity}</p>
-</section>
-</section>
-<section id="sec-conclusion" class="level1">
-<h1>Conclusion</h1>
-<p>This test paper demonstrates how to structure a Quarto document with citations, labeled tables, and figures. The lane-free traffic model, as proposed in <span class="citation" data-cites="lanefreepaper2021">Papageorgiou et al. (<a href="#ref-lanefreepaper2021" role="doc-biblioref">2021</a>)</span>, offers a promising direction for future mobility systems. The simulation parameters in Table <a href="#tbl-simparams" class="quarto-xref">Table&nbsp;1</a> and the results shown in Figure <a href="#fig-flowchart" class="quarto-xref">Figure&nbsp;1</a> support the feasibility of this approach.</p>
-
+<p>test</p>
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-lanefreepaper2021" class="csl-entry" role="listitem">
-Papageorgiou, Markos, Kyriakos-Simon Mountakis, Iasson Karafyllis, Ioannis Papamichail, and Yibing Wang. 2021. <span>“Lane-Free Artificial-Fluid Concept for Vehicular Traffic.”</span> <em>Proceedings of the IEEE</em> 109 (2): 114–21.
-</div>
-</div></section></div></main>
+</main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
