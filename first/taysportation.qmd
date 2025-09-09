@@ -6,6 +6,8 @@ author:
   - Klaus Bogenberger, TU Munich
 format: html
 jupyter: python3
+execute:
+  echo: false
 ---
 
 
@@ -39,23 +41,50 @@ Irregular travelers, such as attendees of special events, can cause excessive ro
 - Traffic Tracker
 - Historical Congestion Estimates
 
-# Modal Split Estimation {#sec-modal}
+# Speed Analysis {#sec-modal}
 
 ```{python}
-# Example modal split data
-modal_split = {
-    "Metro": 8,
-    "Bus": 3,
-    "Taxi": 6,
-    "Uber": 32,
-    "Car": 51
-}
-
+import pandas as pd
 import matplotlib.pyplot as plt
-plt.bar(modal_split.keys(), modal_split.values(), color='mediumslateblue')
-plt.title("Estimated Modal Split")
-plt.ylabel("Percentage")
-plt.show()
+import numpy as np
+from ipywidgets import interact, IntRangeSlider
+
+# Load your data
+df = pd.read_csv("output_average_speed_with_percentage_difference583.csv")
+
+# Function to plot based on selected hour range
+def plot_speed(hour_range):
+    start_hour, end_hour = hour_range
+
+    # Filter data for selected hours
+    mask = (df["Hour"] >= start_hour) & (df["Hour"] <= end_hour)
+
+    # Speed for June 2
+    speed_0206 = df[(df["Day_x"] == "2023-06-02") & mask].set_index("Hour")["SPEED_x"]
+
+    # Mean speed for other days
+    mean_speed_exclude_0206 = df[(df["Day_x"] != "2023-06-02") & mask].groupby("Hour")["SPEED_x"].mean()
+
+    # Reindex to match
+    speed_0206 = speed_0206.reindex(mean_speed_exclude_0206.index)
+
+    # Plotting
+    plt.figure(figsize=(10, 6))
+    plt.plot(speed_0206.index, speed_0206.values, label="June 2, 2023", c='r', linewidth=3, marker='o')
+    plt.plot(mean_speed_exclude_0206.index, mean_speed_exclude_0206.values, label="Mean (Other Days)", linestyle="--", linewidth=3)
+
+    plt.xlabel("Hour of the Day")
+    plt.ylabel("Speed (mph)")
+    plt.title(f"Traffic Speed Comparison ({start_hour}:00–{end_hour}:00)")
+    plt.legend()
+    plt.grid(True)
+    plt.tight_layout()
+    plt.show()
+
+# Create interactive slider
+interact(plot_speed, hour_range=IntRangeSlider(value=[16, 23], min=0, max=23, step=1, description='Hour Range'))
+
+
 ```
 
 test
