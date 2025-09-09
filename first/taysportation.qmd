@@ -20,6 +20,7 @@ execute:
 
 Large-scale entertainment events, such as concerts and festivals, introduce a sudden influx of irregular travelers into urban environments, placing temporary but intense pressure on transportation systems. This study presents a structured framework for analyzing the mobility impacts of such events, using multimodal data and behavioral insights. Starting with event-specific inputs—such as venue capacity, fanbase demographics, and transportation availability—we apply data cleaning and processing techniques to estimate modal splits, analyze demand surges, and assess traffic patterns. A representative case from Taylor Swift’s Eras Tour illustrates how public transit, ride-hailing services, and private vehicles respond to high-attendance scenarios, with notable congestion and speed reductions observed near key access routes. The findings inform policy recommendations focused on demand management strategies and multimodal coordination. This framework is designed to be scalable and adaptable across different cities and event types, supporting evidence-based planning for future special events.
 
+Plan @fig-banner
 # Introduction {#sec-intro}
 
 Most of us have attended a planned special event such as a concert or a sports game. But have we ever considered how these events impact the transportation systems of our cities?
